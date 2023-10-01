@@ -8,7 +8,7 @@ SELECT
     , FORMAT_DATE("%Y%m%d",calls.start_date) as calls_start_date_id
     , calls.end_date as calls_end_date
     , FORMAT_DATE("%Y%m%d",calls.end_date) as calls_end_date_id
-    , calls.total_duration as calls_total_duration
+    , TIMESTAMP_DIFF(ivc.end_date, ivc.start_date, SECOND) AS calls_total_duration
     , calls.customer_segment as calls_customer_segment
     , calls.ivr_language as calls_ivr_language
     , calls.steps_module as calls_steps_module
