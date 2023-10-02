@@ -75,9 +75,12 @@ LEFT
   , calls_steps_module
   , calls_module_aggregation
   , documents.document_type
+  , masiva_lg
   , documents.document_identification
   , documents.customer_phone
   , documents.billing_account
   , llamadas.primera_llamada
-  , llamadas.segunda_llamada;
+  , llamadas.segunda_llamada
+  , repeated_phone_24H
+  , cause_recall_phone_24H;
 
